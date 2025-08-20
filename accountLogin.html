@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account page</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="User profile and account settings, wishlist and details.">
+    <meta name="keywords" content="account, profile, TipToeSoles, fashion">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="TextandImages/TipToe Soles_Logo_colour.png" alt="TipToeSoles logo" width="100%" height="20%">            </a>
+        </div>
+        <h1>Account Login</h1>
+        <div class="header-actions">
+            <button class="search-btn" aria-label="Search" id="searchToggle">
+                <img src="TextandImages/googlefonts_icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Search icon">
+            </button>
+            <a href="accountLogin.html" target="_blank" class="account-link">
+                <img src="TextandImages/googlefonts_icons/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Account icon">
+                <span>My Account</span>
+            </a>
+        </div>
+        <!-- Slide-out search bar -->
+        <div class="search-bar" id="searchBar">
+            <form>
+                <input type="text" id="search" placeholder="Search products..." aria-label="Search products">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="home-container">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li> 
+            </ul>
+        </nav>
+        <main class="home-main">
+            <h2>Account Login</h2>
+            <section>
+                <h2>Login</h2>
+                <form class="login-form" action="index.html" method="post" aria-label="login form"> <!-- Note Action can be set to a server-side script for processing -->
+                    <!--This form is just an example or base and is not funtionable-->
+                    <label for="username">Username or Email:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <section class="wishlist-section">
+                <h2>My Wishlist</h2>
+                <ul class="wishlist-list">
+                    <li>No items in your wishlist yet.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <p>
+            <a href="returnspolicy.html">Returns and exchanges</a> | 
+            <a href="deliverypolicy.html">Our delivery policy</a></p><br>
+            <p>Microsoft. (2025). Copilot (May version) [Large language model]. https://copilot.microsoft.com has been used to assist in this webiste project <br>
+            The usage of ai considers the TAFE policy <a href="https://cd.tafensw.edu.au/api/-/media/Files/PDFs/Brochures-Flyers/TAFE-NSW-Generative-Artificial-Intelligence-in-Education-Policy.pdf?rev=782ce766d8614a72a0bdd1d1db6ec63a"><u><b>Generative Artificial Intelligence in Education</b></u> </a>.
+            </p><br>
+            <p>This is a fictitious site created for educational purposes. Sources of graphic icons:
+            <a href="https://www.freepik.com/icon/facebook_1384021#fromView=resource_detail&position=14"><u>Freepik Social media Icons</u></a>    
+            <a href="https://fonts.google.com/icons"><u>GOOGLE icons</u></a>    
+
+           </p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/" aria-label="Facebook"><img src="TextandImages/icons_general/facebook_1384021.png"  alt="facebook icon"></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><img src="TextandImages/icons_general/instagram_1384031.png"   alt="Instagram icon"></a>
+        </div>
+    </footer>
+
+    <script>
+    // Slide-out search bar
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    searchToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchBar.querySelector('input').focus();
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") searchBar.classList.remove('open');
+    });
+    // Close search bar when clicking outside
+    document.addEventListener('click', (e) => {
+        if (searchBar.classList.contains('open') && !searchBar.contains(e.target) && e.target !== searchToggle) {
+            searchBar.classList.remove('open');
+        }
+    });
+    </script>
+</body>
+</html>

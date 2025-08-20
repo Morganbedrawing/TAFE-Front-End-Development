@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products TipToeSoles</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Products available to purchase. Mens and Womens shoes.">
+    <meta name="keywords" content="shoes, footwear, TipToeSoles, fashion">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="TextandImages/TipToe Soles_Logo_colour.png" alt="TipToeSoles logo" width="100%" height="20%">
+            </a>
+        </div>
+        <h1>Products</h1>
+        <div class="header-actions">
+            <button class="search-btn" aria-label="Search" id="searchToggle">
+                <img src="TextandImages/googlefonts_icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Search icon">
+            </button>
+            <a href="accountLogin.html" target="_blank" class="account-link">
+                <img src="TextandImages/googlefonts_icons/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Account icon">
+                <span>My Account</span>
+            </a>
+        </div>
+        <!-- Slide-out search bar -->
+        <div class="search-bar" id="searchBar">
+            <form>
+                <input type="text" id="search" placeholder="Search products..." aria-label="Search products">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar-group">
+            <nav class="side-nav">
+                <a href="aboutus.html">About Us</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">Home</a></li> 
+            </nav>
+            <aside class="filters">
+                <h2>Product Filters</h2>
+                <form id="filterForm">
+                    <label>
+                        <input type="checkbox" name="colour" value="tan"> Tan
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="colour" value="midnight"> Midnight
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="colour" value="chestnut"> Chestnut
+                    </label>
+                    <br><br>
+                    <button type="button" id="applyFilters">Apply Filters</button>
+                </form>
+            </aside>
+        </div>
+        <main>
+            <h2> Mens Shoes </h2><br>
+            <section class="products-grid">
+                <article class="product-card" data-colour="tan midnight">
+                    <a href="products.html">
+                        <img src="TextandImages/Gary Tan.jpg" alt="View Gary Tan Shoes" width="220" height="180">
+                    </a>
+                    <div class="product-info">
+                        <h3>GARY</h3>
+                        <p class="price">$79.00</p>
+                        <p>Colours: Tan and midnight</p>
+                        <p>Sizes: US 6, 7, 8, 9, 10, 11</p>
+                        <details>
+                            <summary>Description</summary>
+                            <ul>
+                                <li>Soft leather uppers</li>
+                                <li>Breathable mesh lining</li>
+                                <li>Removable footbed with soft mesh sock lining</li>
+                                <li>Contoured footbed with additional heel padding</li>
+                                <li>Orthotic friendly</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Materials & Details</summary>
+                            <ul>
+                                <li>Product Code: 30213</li>
+                                <li>Sole Material: Rubber</li>
+                                <li>Sock Material: Synthetic</li>
+                                <li>Lining Material: Eco friendly</li>
+                                <li>Upper Material: Leather</li>
+                            </ul>
+                        </details>
+                    </div>
+                </article>
+                <article class="product-card" data-colour="chestnut">
+                    <a href="products.html"></a>
+                    <img src="TextandImages/Work and Walk Chesnut.jpg" alt="Work and Walk Chestnut" width="220" height="180">
+                    </a>
+                    <div class="product-info">
+                        <h3>Work and Walk</h3>
+                        <p class="price">$85.00</p>
+                        <p>Colours: Chestnut</p>
+                        <p>Sizes: US 6, 7, 8, 9, 10, 11</p>
+                        <details>
+                            <summary>Description</summary>
+                            <ul>
+                                <li>Upper is scuff, stain & water-resistant</li>
+                                <li>Breathable & soft foam backed mesh lining</li>
+                                <li>Padded collar is super soft on the heel</li>
+                                <li>Pull-tab for easy fitting</li>
+                                <li>Metal eyelet detail</li>
+                                <li>Footbed hugs your heel for extra support</li>
+                                <li>Removable insole to fit your own orthotics</li>
+                                <li>Dual Fit. Remove the insole for a wider fit</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Materials & Details</summary>
+                            <ul>
+                                <li>Product Code: 30144</li>
+                                <li>Sole Material: Rubber</li>
+                                <li>Sock Material: Pigskin</li>
+                                <li>Lining Material: Mesh</li>
+                                <li>Upper Material: Leather</li>
+                            </ul>
+                        </details>
+                    </div>
+                </article>
+
+            <h2> Womens Shoes </h2><br>
+            <article class="product-card" data-colour="Tan and black">
+                <a href="products.html"></a>
+                    <img src="TextandImages/Sally Black.jpg" alt="Sally">
+                </a>
+                <div class="product-info">
+                    <h3>Sally</h3>
+                    <p class="price">$75.00</p>
+                    <p>Colours: Tan and black</p>
+                    <p>Sizes: US 6, 7, 8, 9, 10, 11</p>
+                    <details>
+                        <summary>Description</summary>
+                        <ul>
+                            <li>Soft smooth leather uppers</li>
+                            <li>Semi lined uppers for a soft unstructured feel</li>
+                            <li>Super comfortable insole & padded arch support</li>
+                            <li>Super lightweight outsole helps to absorb shock</li>
+                            <li>Flexible & grippy outsole</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Materials & Details</summary>
+                        <ul>
+                            <li>Product Code: 301818</li>
+                            <li>Sole Material: Phylon rubber</li>
+                            <li>Sock Material: Pigskin</li>
+                            <li>Lining Material: Leather/synthetic</li>
+                            <li>Upper Material: Leather</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+
+            <article class="product-card" data-colour="Black">
+                <a href="products.html"></a>
+                    <img src="TextandImages/Heavenly Black.jpg" alt="Heavenly Black Shoes">
+                </a>
+                <div class="product-info">
+                    <h3>Heavenly</h3>
+                    <p class="price">$90.00</p>
+                    <p>Colours: Black</p>
+                    <p>Sizes: US 6, 7, 8, 9, 10, 11</p>
+                    <details>
+                        <summary>Description</summary>
+                        <ul>
+                            <li>Soft leather uppers and lightly padded collar</li>
+                            <li>Plush footbed for added comfort</li>
+                            <li>Recycled heel grip</li>
+                            <li>Flexible and grippy outsole with 10% recycled material</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Materials & Details</summary>
+                        <ul>
+                            <li>Product Code: 21960</li>
+                            <li>Sole Material: Rubber</li>
+                            <li>Sock Material: Pigskin</li>
+                            <li>Lining Material: Unlined</li>
+                            <li>Upper Material: Leather</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+
+            <article class="product-card" data-colour="Blue">
+                <a href="products.html"></a>
+                    <img src="TextandImages/Clancy Blue.jpg" alt="Clancy">
+                </a>
+                <div class="product-info">
+                    <h3>Clancy</h3>
+                    <p class="price">$59.00</p>
+                    <p>Colours: Blue</p>
+                    <p>Sizes: US 6, 7, 8, 9, 10, 11</p>
+                    <details>
+                        <summary>Description</summary>
+                        <ul>
+                            <li>Stretchable mesh fabric allows an easy fit</li>
+                            <li>Memory foam insoles</li>
+                            <li>Air circulation due to holes on each side</li>
+                            <li>Support to tired feet</li>
+                            <li>Arch support design eliminates strain or imbalance</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Materials & Details</summary>
+                        <ul>
+                            <li>Product Code: 30182</li>
+                            <li>Sole Material: Rubber</li>
+                            <li>Sock Material: Pigskin</li>
+                            <li>Lining Material: Unlined</li>
+                            <li>Upper Material: Leather</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+            </main>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <p>
+            <a href="returnspolicy.html">Returns and exchanges</a> | 
+            <a href="deliverypolicy.html">Our delivery policy</a></p><br>
+            <p>Microsoft. (2025). Copilot (May version) [Large language model]. https://copilot.microsoft.com has been used to assist in this webiste.  <br>
+            The usage of ai considers the TAFE policy <a href="https://cd.tafensw.edu.au/api/-/media/Files/PDFs/Brochures-Flyers/TAFE-NSW-Generative-Artificial-Intelligence-in-Education-Policy.pdf?rev=782ce766d8614a72a0bdd1d1db6ec63a"><u><b>Generative Artificial Intelligence in Education</b></u> </a>.
+            </p><br>
+            <p>This is a fictitious site created for educational purposes.</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><img src="TextandImages/icons_general/facebook_1384021.png"  alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="TextandImages/icons_general/instagram_1384031.png"   alt="Instagram icon"></a>
+        </div>
+    </footer>
+
+    <script>
+    // Slide-out search bar
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+
+    searchToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchBar.querySelector('input').focus();
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") searchBar.classList.remove('open');
+    });
+    // Close search bar when clicking outside
+    document.addEventListener('click', (e) => {
+        if (searchBar.classList.contains('open') && !searchBar.contains(e.target) && e.target !== searchToggle) {
+            searchBar.classList.remove('open');
+        }
+    });
+
+    // Filter function
+    document.getElementById('applyFilters').addEventListener('click', function() {
+        const checked = Array.from(document.querySelectorAll('input[name="colour"]:checked')).map(cb => cb.value);
+        document.querySelectorAll('.product-card').forEach(card => {
+            const colours = card.getAttribute('data-colour').split(' ');
+            if (checked.length === 0 || checked.some(col => colours.includes(col))) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</body>
+</html>

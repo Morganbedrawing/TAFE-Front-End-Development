@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>returns policy</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Information regarding product returns.">
+    <meta name="keywords" content="refund, product exchanges">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="TextandImages/TipToe Soles_Logo_colour.png" alt="TipToeSoles logo" width="100%" height="20%">            </a>
+        </div>
+        <h1>Returns Policy</h1>
+        <div class="header-actions">
+            <button class="search-btn" aria-label="Search" id="searchToggle">
+                <img src="TextandImages/googlefonts_icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Search icon">
+            </button>
+            <a href="accountLogin.html" target="_blank" class="account-link">
+                <img src="TextandImages/googlefonts_icons/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Account icon">
+                <span>My Account</span>
+            </a>
+        </div>
+        <!-- Slide-out search bar -->
+        <div class="search-bar" id="searchBar">
+            <form>
+                <input type="text" id="search" placeholder="Search products..." aria-label="Search products">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="home-container">
+        <nav class="side-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <main class="home-main">
+            <!-- policy text here -->
+            <section>
+                <h2>RETURNS AND EXCHANGE POLICY</h2><br>
+                <p>       
+
+                    <p>TipToe Soles is confident that you will be happy with your purchase. If for any reason this is not the case, we offer FREE RETURNS for items over $60 within 28 days of the order date. TipToe Soles will not take responsibility for returned items not received if registered post is not used.
+                    We have 4 conditions of return for change of mind, item(s) must be returned: </p><br>
+                    <p>
+                    -	Within 28 days of the order date <br>
+                    -	Item must be unworn with the original tags still attached - we are unable to accept shoes 	with dirty marks or damaged soles <br>
+                    -	Items must be returned in the original shoe box which must be in the original condition. <br>
+                    -	Postage is non-refundable <br>
+                    </p><br>
+                    TipToe Soles reserves the right to refuse the return if these conditions are not adhered to.
+
+                </p>
+                <!-- policy text end tmorgan -->
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="returnspolicy.html">Returns and exchanges</a> | 
+            <a href="deliverypolicy.html">Our delivery policy</a>
+            <p>Microsoft. (2025). Copilot (May version) [Large language model]. https://copilot.microsoft.com has been used to assist in this webiste.  <br>
+            The usage of ai considers the TAFE policy <a href="https://cd.tafensw.edu.au/api/-/media/Files/PDFs/Brochures-Flyers/TAFE-NSW-Generative-Artificial-Intelligence-in-Education-Policy.pdf?rev=782ce766d8614a72a0bdd1d1db6ec63a"><u><b>Generative Artificial Intelligence in Education</b></u> </a>.
+            </p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><img src="TextandImages/icons_general/facebook_1384021.png"  alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="TextandImages/icons_general/instagram_1384031.png"   alt="Instagram icon"></a>
+        </div>
+    </footer>
+
+    <script>
+    // Slide-out search bar
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    searchToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchBar.querySelector('input').focus();
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") searchBar.classList.remove('open');
+    });
+    // Close search bar when clicking outside
+    document.addEventListener('click', (e) => {
+        if (searchBar.classList.contains('open') && !searchBar.contains(e.target) && e.target !== searchToggle) {
+            searchBar.classList.remove('open');
+        }
+    });
+    </script>
+</body>
+</html>
